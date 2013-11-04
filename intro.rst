@@ -47,54 +47,97 @@ Features
 
 Strider has the following major features:
 
-- Stylish dashboard displaying the current and recent test and deploy status of
-  each project.
+Dashboard
+^^^^^^^^^
 
-- Github, Github Enterprise, BitBucket, GitLab and more. Intuitively add
-  projects for CI and CD with only a few clicks. No messing with scripts or SSH
-  keys - Strider does it for you.
+Stylish dashboard displaying the current and recent test and deploy status of
+each project.
 
-- Notification on success and failure. Emails work out of the box to notify
-  humans, Webhooks supported for notifying machines. Want custom notification
-  method? It's easy to develop a plugin.
+Github, Github Enterprise, BitBucket
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Development teams via "collaborators". Give other users read-only access or
-  full admin rights to your projects.
+Strider integrates with Github, Github Enterprise, BitBucket, GitLab and more.
+Intuitively add projects for CI and CD with only a few clicks. No messing with
+scripts or SSH keys - Strider does it for you.
 
-- Public projects. Let the world at large see your project status dashboard!
-  Public projects may be browsed by anonymous users, but not triggered nor
-  configured. Great for Open Source projects. See Strider's public CI dashbaord
-  at https://public-ci.stridercd.com.
 
-- Branches. Each VCS branch may be configured independently, including with
-  different deployment configuration. Use this to create powerful workflows.
-  For example, "master" branch may only deploy to production with a manual
-  trigger while "testing" branches deploy to QA automatically on each
-  successful test run.
+Email And Webhook Notifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Pull Requests. GitHub pull requests can be automatically tested when they are
-  opened, with test result status sent back to GitHub to mark the PR. For
-  security reasons, this is only enabled for specific users which you
-  whitelist.
+Notification on success and failure. Emails work out of the box to notify
+humans, Webhooks supported for notifying machines. Want custom notification
+method? It's easy to develop a plugin.
 
-- Script each phase of each project from the web or config file. Custom prepare, test and deploy scripts
-  easily enable integration with your specific language, environment and existing automation.
+Teams and Collaborators
+^^^^^^^^^^^^^^^^^^^^^^^
 
-- Heroku support. Deploy directly to Heroku apps with the ``strider-heroku`` plugin.
+Development teams via "collaborators". Give other users read-only access or
+full admin rights to your projects.
 
-- Out-of-box support for Node.JS and Python projects. Other languages / environments can be supported with thirdparty plugins
-  or custom scripts.
+Public Projects
+^^^^^^^^^^^^^^^
 
-- Sauce Labs integration. Easily configure SauceLabs.com credentials and select os/browser combinations via Strider's web UI. Strider will
-  even manage the Sauce Connect proxy for you - waiting for it to be connected before running your tests.
+Let the world at large see your project status dashboard!  Public projects may
+be browsed by anonymous users, but not triggered nor configured. Great for Open
+Source projects. See Strider's public CI dashbaord at
+https://public-ci.stridercd.com.
 
-- Extensibility. Strider is designed to be highly extensible. The core is
-  minimal, with most features implemented in plugins (e.g. strider-heroku,
-  strider-github, strider-sauce). In keeping with Node.JS, Strider plugins are
-  simply NPM modules. This makes it easy to support new VCS providers,
-  deployment targets, languages or environments and so on. See the chapter on
-  Extending Strider for more!
+Branches
+^^^^^^^^
 
-- Commercial support. FrozenRidge, LLC provides commercial support
-  including training, customization/integration and cloud-hosting. Email
-  hi@frozenridge.co to learn more.
+Each VCS branch may be configured independently, including with different
+deployment configuration. Use this to create powerful workflows.  For example,
+"master" branch may only deploy to production with a manual trigger while
+"testing" branches deploy to QA automatically on each successful test run.
+
+Pull Requests
+^^^^^^^^^^^^^
+
+GitHub pull requests can be automatically tested when they are opened, with
+test result status sent back to GitHub to mark the PR. For security reasons,
+this is only enabled for specific users which you whitelist.
+
+Advanced Shell Scripting
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Script each phase of each project from the web or config file. Custom prepare,
+test and deploy scripts easily enable integration with your specific language,
+environment and existing automation.
+
+Heroku Support
+^^^^^^^^^^^^^^
+
+Deploy directly to Heroku apps with the ``strider-heroku`` plugin.
+
+
+Node.js And Python
+^^^^^^^^^^^^^^^^^^
+
+Out-of-box support for Node.JS and Python projects. Other languages /
+environments can be supported with thirdparty plugins or custom scripts.
+
+Front-end JavaScript testing with Sauce Labs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Easily configure SauceLabs.com credentials and select os/browser combinations
+via Strider's web UI. Strider will even manage the Sauce Connect proxy for you
+- waiting for it to be connected before running your tests.
+
+
+Extensibility
+^^^^^^^^^^^^^
+
+Strider is designed to be highly extensible. The core is minimal, with most
+features implemented in plugins (e.g. strider-heroku, strider-github,
+strider-sauce). In keeping with Node.JS, Strider plugins are simply NPM
+modules. This makes it easy to support new VCS providers, deployment targets,
+languages or environments and so on. See the chapter on Extending Strider for
+more!
+
+
+Commercial Support
+^^^^^^^^^^^^^^^^^^
+
+FrozenRidge, LLC provides commercial support including training,
+customization/integration and cloud-hosting. Email hi@frozenridge.co to learn
+more.
