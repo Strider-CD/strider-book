@@ -17,7 +17,7 @@ Continuous Integration (a.k.a. CI) is a software engineering process.  It can be
 defined as running an automated test suite on every commit to a software project
 and notifying on success and failure. 
 
-CI is useful because it greatly increases the feedback developers receive on
+CI is beneficial as it greatly increases the feedback developers receive on
 each commit, and the health and well-being of the software overall. It is
 amazing how many bugs can be found which otherwise would remain covered due to
 particulars of development environments.
@@ -95,6 +95,6 @@ Strider has the following major features:
   deployment targets, languages or environments and so on. See the chapter on
   Extending Strider for more!
 
-- Commercially supported. FrozenRidge, LLC provides commercial support
+- Commercial support. FrozenRidge, LLC provides commercial support
   including training, customization/integration and cloud-hosting. Email
   hi@frozenridge.co to learn more.
