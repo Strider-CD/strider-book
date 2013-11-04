@@ -85,8 +85,8 @@ Strider has the following major features:
 - Out-of-box support for Node.JS and Python projects. Other languages / environments can be supported with thirdparty plugins
   or custom scripts.
 
-- Sauce Labs integration. Easily configure Sauce credentials and select os/browser combinations via Strider's web UI. Strider will
-  even manage the Sauce Connect proxy for you.
+- Sauce Labs integration. Easily configure SauceLabs.com credentials and select os/browser combinations via Strider's web UI. Strider will
+  even manage the Sauce Connect proxy for you - waiting for it to be connected before running your tests.
 
 - Extensibility. Strider is designed to be highly extensible. The core is
   minimal, with most features implemented in plugins (e.g. strider-heroku,
