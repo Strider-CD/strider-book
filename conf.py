@@ -197,7 +197,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'StriderCDBook.tex', u'StriderCD Book Documentation',
+  ('index', 'StriderCDBook.tex', u'StriderCD Book',
    u'Niall O\'Higgins', 'manual'),
 ]
 
@@ -227,7 +227,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'stridercdbook', u'StriderCD Book Documentation',
+    ('index', 'stridercdbook', u'StriderCD Book',
      [u'Niall O\'Higgins'], 1)
 ]
 
@@ -241,7 +241,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'StriderCDBook', u'StriderCD Book Documentation',
+  ('index', 'StriderCDBook', u'StriderCD Book',
    u'Niall O\'Higgins', 'StriderCDBook', 'One line description of project.',
    'Miscellaneous'),
 ]
