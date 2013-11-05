@@ -36,11 +36,28 @@ with a manual push to production.
 Continuous Deployment typically includes a notion of "feature flippers" which enable new features to be
 rolled out gradually, to a subset of customers, or quickly toggled off if they cause issues.
 
+CD makes the software release feedback loop as tight as possible.
+
 Strider Philosophy
 ------------------
 
 We believe that Continuous Integration and Continuous Deployment processes
-improve the quality and reliability of software. Furthermore, these processes 
+improve the quality and reliability of software.
+
+We want to make these processes more accessible, and one of the main blockers
+is well-designed, high quality CI and CD tooling.
+
+By choosing sane defaults, automating to the extent possible, and minimizing
+extraneous UI, Strider can elegantly meet the needs of 80+% users out of the box.
+
+However we realise that in the real-world, integration with other systems and
+customization is often required. For this reason, Strider has been designed
+from the ground up to be as easy as reasonably possible to customize and extend
+- in very powerful ways.
+
+Strider has robust support for extensions (which are simply NPM modules). Have
+a complex workflow to trigger builds and deployments? Write a Job plugin to
+handle it. Use an unsupported VCS? Write a Provider plugin.
 
 Features
 --------
@@ -51,7 +68,9 @@ Dashboard
 ^^^^^^^^^
 
 Stylish dashboard displaying the current and recent test and deploy status of
-each project.
+each project:
+
+.. image:: images/dashboard.png
 
 Github, Github Enterprise, BitBucket
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -60,19 +79,25 @@ Strider integrates with Github, Github Enterprise, BitBucket, GitLab and more.
 Intuitively add projects for CI and CD with only a few clicks. No messing with
 scripts or SSH keys - Strider does it for you.
 
+.. image:: images/repos.png
+
 
 Email And Webhook Notifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Notification on success and failure. Emails work out of the box to notify
-humans, Webhooks supported for notifying machines. Want custom notification
+humans, Webhooks supported for notifying machines. Want a custom notification
 method? It's easy to develop a plugin.
+
+.. image:: images/email-notification.png
 
 Teams and Collaborators
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Development teams via "collaborators". Give other users read-only access or
 full admin rights to your projects.
+
+.. image:: images/collaborators.png
 
 Public Projects
 ^^^^^^^^^^^^^^^
@@ -82,13 +107,17 @@ be browsed by anonymous users, but not triggered nor configured. Great for Open
 Source projects. See Strider's public CI dashbaord at
 https://public-ci.stridercd.com.
 
+.. image:: images/public-project.png
+
 Branches
 ^^^^^^^^
 
-Each VCS branch may be configured independently, including with different
+Each VCS branch may be configured independently, including different
 deployment configuration. Use this to create powerful workflows.  For example,
 "master" branch may only deploy to production with a manual trigger while
 "testing" branches deploy to QA automatically on each successful test run.
+
+.. image:: images/branches.png
 
 Pull Requests
 ^^^^^^^^^^^^^
