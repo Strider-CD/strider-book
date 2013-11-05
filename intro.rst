@@ -70,7 +70,7 @@ Dashboard
 Stylish dashboard displaying the current and recent test and deploy status of
 each project:
 
-.. image:: images/dashboard.png
+.. image:: _static/dashboard.png
 
 Github, Github Enterprise, BitBucket
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,7 +79,7 @@ Strider integrates with Github, Github Enterprise, BitBucket, GitLab and more.
 Intuitively add projects for CI and CD with only a few clicks. No messing with
 scripts or SSH keys - Strider does it for you.
 
-.. image:: images/repos.png
+.. image:: _static/repos.png
 
 
 Email And Webhook Notifications
@@ -89,7 +89,7 @@ Notification on success and failure. Emails work out of the box to notify
 humans, Webhooks supported for notifying machines. Want a custom notification
 method? It's easy to develop a plugin.
 
-.. image:: images/email-notification.png
+.. image:: _static/email-notification.png
 
 Teams and Collaborators
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -97,7 +97,7 @@ Teams and Collaborators
 Development teams via "collaborators". Give other users read-only access or
 full admin rights to your projects.
 
-.. image:: images/collaborators.png
+.. image:: _static/collaborators.png
 
 Public Projects
 ^^^^^^^^^^^^^^^
@@ -107,7 +107,7 @@ be browsed by anonymous users, but not triggered nor configured. Great for Open
 Source projects. See Strider's public CI dashbaord at
 https://public-ci.stridercd.com.
 
-.. image:: images/public-project.png
+.. image:: _static/public-project.png
 
 Branches
 ^^^^^^^^
@@ -117,7 +117,7 @@ deployment configuration. Use this to create powerful workflows.  For example,
 "master" branch may only deploy to production with a manual trigger while
 "testing" branches deploy to QA automatically on each successful test run.
 
-.. image:: images/branches.png
+.. image:: _static/branches.png
 
 Pull Requests
 ^^^^^^^^^^^^^
@@ -126,7 +126,7 @@ GitHub pull requests can be automatically tested when they are opened, with
 test result status sent back to GitHub to mark the PR. For security reasons,
 this is only enabled for specific users which you whitelist.
 
-.. image:: images/prs.png
+.. image:: _static/prs.png
 
 Advanced Shell Scripting
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,14 +135,14 @@ Script each phase of each project from the web or config file. Custom prepare,
 test and deploy scripts easily enable integration with your specific language,
 environment and existing automation.
 
-.. image:: images/custom.png
+.. image:: _static/custom.png
 
 Heroku Support
 ^^^^^^^^^^^^^^
 
 Deploy directly to Heroku apps with the ``strider-heroku`` plugin.
 
-.. image:: images/heroku.png
+.. image:: _static/heroku.png
 
 
 Node.js And Python
@@ -151,7 +151,7 @@ Node.js And Python
 Out-of-box support for Node.JS and Python projects. Other languages /
 environments can be supported with thirdparty plugins or custom scripts.
 
-.. image:: images/node.png
+.. image:: _static/node.png
 
 Front-end JavaScript testing with Sauce Labs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -160,7 +160,7 @@ Easily configure SauceLabs.com credentials and select os/browser combinations
 via Strider's web UI. Strider will even manage the Sauce Connect proxy for you
 - waiting for it to be connected before running your tests.
 
-.. image:: images/sauce.png
+.. image:: _static/sauce.png
 
 
 Extensibility
@@ -173,7 +173,7 @@ modules. This makes it easy to support new VCS providers, deployment targets,
 languages or environments and so on. See the chapter on Extending Strider for
 more!
 
-.. image:: images/plugins.png
+.. image:: _static/plugins.png
 
 Commercial Support
 ^^^^^^^^^^^^^^^^^^
