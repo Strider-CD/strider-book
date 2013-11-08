@@ -21,9 +21,9 @@ requires authentication.
 CORS
 ----
 
-Strider supports CORS so that you may call it from a browser or open a websocket to it (Socket.io initiation protocol requires it.
+Strider supports `CORS <http://en.wikipedia.org/wiki/Cross-origin_resource_sharing>`_ so that you may call it from a browser or open a websocket to it (Socket.io initiation protocol requires it).
 
-To enable CORS pass a `cors` configuration option when instantiating Strider.
+To enable CORS pass a `cors` configuration option when instantiating Strider, which is then passed to the `cors npm module <https://npmjs.org/package/cors>`_.
 
 Example:
 
